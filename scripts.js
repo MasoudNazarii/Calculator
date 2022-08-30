@@ -4,6 +4,14 @@ function clearScreen() {
     document.getElementById("result").value = "";
 }
 
+// This function is for backspace
+
+function backSpace() {
+    var value = document.getElementById("result").value;
+
+    document.getElementById("result").value = value.substr(0, value.length - 1);
+}
+
 // This function display values
 
 function display(value) {
@@ -19,3 +27,5 @@ function calculate() {
 
     document.getElementById("result").value = q;
 }
+
+
