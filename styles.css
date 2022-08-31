@@ -1,16 +1,19 @@
 .calculator {
+    position: absolute;
     padding: 15px;
     border-radius: 1em;
     height: 500px;
     width: 400px;
-    margin: auto;
-    background-color: #000000;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    
+    margin: 0;
+    background-color: #0b1a10b2;
+    backdrop-filter: blur(2rem);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 .display-box {
     font-family: 'Orbitron', sans-serif;
-    background-color: rgba(87, 207, 137, 0.63);
+    background-color: rgba(77, 212, 189, 0.63);
     border: solid black 0.5px;
     color: rgb(81, 255, 0);
     border-radius: 5px;
@@ -21,7 +24,7 @@
     
 }
 #btn {
-    background-color: #71c5c5; 
+    background-color: #61182e; 
     color: white;
 }
 input[type=button] {
@@ -42,3 +45,58 @@ input:active[type=button] {
     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
     box-shadow: inset 0px 0px 5px #c1c1c1;
 }
+
+.cal-div {
+    position: absolute;
+    margin: 0;
+    height: 550px;
+    width: 30%;
+    top: 90%;
+    left: 50%;
+    border-radius: 2rem;
+    backdrop-filter: blur(2rem);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    z-index: 1;
+    background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 0.582),
+      rgba(255, 255, 255, 0.3));
+      transform: translate(-50%, 10%);
+
+}
+
+body {
+    background-image: linear-gradient(to top left, black, rgb(27, 116, 27));
+    background-attachment:fixed;
+    height:100%;
+    backdrop-filter: blur(2rem);
+}
+
+.glass1, .glass2 {
+    background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 0.671),
+      rgba(255, 255, 255, 0.356));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 2rem;
+}
+
+.glass1 {
+    top: 50%;
+    left: 30%;
+    
+}
+
+.glass2 {
+    top: 100%;
+    right: 25%;
+    
+}
+
+
+
+
+
+
+
+
