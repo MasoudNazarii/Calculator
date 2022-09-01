@@ -5,7 +5,10 @@
     height: 500px;
     width: 400px;
     margin: 0;
-    background-color: #0b1a10b2;
+    background: linear-gradient(to right bottom,
+     rgb(0, 0, 0),
+      rgba(32, 31, 31, 0.973)
+      );
     backdrop-filter: blur(2rem);
     transform: translate(-50%, -50%);
     top: 50%;
@@ -51,14 +54,14 @@ input:active[type=button] {
     margin: 0;
     height: 550px;
     width: 30%;
-    top: 90%;
+    top: 0%;
     left: 50%;
     border-radius: 2rem;
     backdrop-filter: blur(2rem);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     z-index: 1;
     background: linear-gradient(to right bottom,
-     rgba(255, 255, 255, 0.582),
+     rgba(255, 255, 255, 0.13),
       rgba(255, 255, 255, 0.3));
       transform: translate(-50%, 10%);
 
@@ -68,32 +71,38 @@ body {
     background-image: linear-gradient(to top left, black, rgb(27, 116, 27));
     background-attachment:fixed;
     height:100%;
-    backdrop-filter: blur(2rem);
 }
 
 .glass1, .glass2 {
     background: linear-gradient(to right bottom,
-     rgba(255, 255, 255, 0.671),
-      rgba(255, 255, 255, 0.356));
-    height: 15rem;
-    width: 15rem;
+     rgba(255, 255, 255, 0.356),
+      rgba(255, 255, 255, 0));
+    height: 13rem;
+    width: 13rem;
     position: absolute;
     border-radius: 2rem;
+    margin: 0;
 }
 
 .glass1 {
-    top: 50%;
+    top: 15%;
     left: 30%;
     
 }
 
 .glass2 {
-    top: 100%;
-    right: 25%;
+    top: 40%;
+    right: 30%;
     
 }
 
-
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
 
 
 
