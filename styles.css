@@ -32,7 +32,7 @@
 }
 input[type=button] {
     font-family: 'Roboto Mono', monospace;
-    background-color: #b0a0f5;
+    background-color: #1c90d3;
     color: rgb(0, 0, 0);
     border: solid black 0.5px;
     width: 70%;
@@ -77,35 +77,21 @@ body {
     background: linear-gradient(to right bottom,
      rgba(255, 255, 255, 0.356),
       rgba(255, 255, 255, 0));
-    height: 13rem;
-    width: 13rem;
+    height: 14rem;
+    width: 14rem;
     position: absolute;
     border-radius: 2rem;
     margin: 0;
 }
 
 .glass1 {
-    top: 15%;
+    top: 12%;
     left: 30%;
     
 }
 
 .glass2 {
-    top: 40%;
+    top: 43%;
     right: 30%;
     
 }
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-}
-
-
-
-
-
-
