@@ -1,47 +1,56 @@
+body {
+    background-image: linear-gradient(to top left, black, rgb(27, 116, 27));
+    background-attachment:fixed;
+    height:100%;
+}
+
 .calculator {
     position: absolute;
     padding: 15px;
-    border-radius: 1em;
     height: 500px;
     width: 400px;
     margin: 0;
-    background: linear-gradient(to right bottom,
-     rgb(0, 0, 0),
-      rgba(32, 31, 31, 0.973)
-      );
+    background: rgba(0, 0, 0, 0.432);
     backdrop-filter: blur(2rem);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
 }
+
 .display-box {
     font-family: 'Orbitron', sans-serif;
-    background-color: rgba(77, 212, 189, 0.63);
-    border: solid black 0.5px;
+    background-color: transparent;
+    border: transparent;
     color: rgb(81, 255, 0);
-    border-radius: 5px;
     width: 100%;
-    height: 65%;
+    height: 100px;
     font-size: 20px;
     align-items: center;
-    
 }
+
 #btn {
-    background-color: #61182e; 
+    background-color: #4bc491; 
     color: white;
 }
+
+#btn:hover {
+    background-color: #61182e77;
+}
+
 input[type=button] {
     font-family: 'Roboto Mono', monospace;
     background-color: #1c90d3;
     color: rgb(0, 0, 0);
     border: solid black 0.5px;
-    width: 70%;
-    border-radius: 5px;
-    height: 65%;
     outline: none;
     font-size: 20px;
     font-weight: bold;
 }
+
+input:hover[type=button] {
+    background-color: #1c90d35d;
+}
+
 input:active[type=button] {
     background: #e5e5e5;
     -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
@@ -49,49 +58,12 @@ input:active[type=button] {
     box-shadow: inset 0px 0px 5px #c1c1c1;
 }
 
-.cal-div {
-    position: absolute;
-    margin: 0;
-    height: 550px;
-    width: 30%;
-    top: 0%;
-    left: 50%;
-    border-radius: 2rem;
-    backdrop-filter: blur(2rem);
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    z-index: 1;
-    background: linear-gradient(to right bottom,
-     rgba(255, 255, 255, 0.13),
-      rgba(255, 255, 255, 0.3));
-      transform: translate(-50%, 10%);
-
-}
-
-body {
-    background-image: linear-gradient(to top left, black, rgb(27, 116, 27));
-    background-attachment:fixed;
-    height:100%;
-}
-
-.glass1, .glass2 {
-    background: linear-gradient(to right bottom,
-     rgba(255, 255, 255, 0.356),
-      rgba(255, 255, 255, 0));
-    height: 14rem;
-    width: 14rem;
-    position: absolute;
-    border-radius: 2rem;
-    margin: 0;
-}
-
-.glass1 {
-    top: 12%;
-    left: 30%;
-    
-}
-
-.glass2 {
-    top: 43%;
-    right: 30%;
-    
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    top: 15%;
 }
