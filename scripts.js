@@ -27,5 +27,3 @@ function calculate() {
 
     document.getElementById("result").value = q;
 }
-
-
