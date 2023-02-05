@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to top left, black, rgb(27, 116, 27));
+    background-image: linear-gradient(to top left, black, rgb(64, 87, 64));
     background-attachment:fixed;
     height:100%;
 }
@@ -15,44 +15,40 @@ body {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    border-radius: 0.4rem;
 }
 
 .display-box {
     font-family: 'Orbitron', sans-serif;
     background-color: transparent;
     border: transparent;
-    color: rgb(81, 255, 0);
+    color: rgb(255, 255, 255);
     width: 100%;
-    height: 100px;
+    height: 50px;
     font-size: 20px;
     align-items: center;
 }
 
 #btn {
-    background-color: #4bc491; 
-    color: white;
+    background-color: #467e6d; 
+    color: #e5e5e5;
 }
 
 #btn:hover {
-    background-color: #61182e77;
+    background-color: rgb(26, 90, 87);
 }
 
 input[type=button] {
     font-family: 'Roboto Mono', monospace;
-    background-color: #1c90d3;
-    color: rgb(0, 0, 0);
     border: solid black 0.5px;
     outline: none;
     font-size: 20px;
     font-weight: bold;
-}
-
-input:hover[type=button] {
-    background-color: #1c90d35d;
+    border-radius: 0.3rem;
 }
 
 input:active[type=button] {
-    background: #e5e5e5;
+    background: #b9b9b9;
     -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
     box-shadow: inset 0px 0px 5px #c1c1c1;
@@ -65,5 +61,23 @@ input:active[type=button] {
     width: 100%;
     height: 60%;
     position: relative;
-    top: 15%;
+    top: 20%;
+}
+
+.numbers {
+    color: #e5e5e5;
+    background-color: rgb(44, 42, 42);
+}
+
+.numbers:hover {
+    background-color: rgb(27, 26, 26);
+}
+
+.operator {
+    color: #e5e5e5;
+    background-color: rgb(27, 26, 26);
+}
+
+.operator:hover {
+    background-color: rgb(44, 42, 42);
 }
