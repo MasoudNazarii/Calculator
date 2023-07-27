@@ -11,9 +11,13 @@ function backSpace() {
 
     document.getElementById("result").value = value.substr(0, value.length - 1);
 }
+document.addEventListener("keydown",function(event){
+    if ((event.code == "Backspace")) {
+        backSpace();
+    }
+});
 
-
-
+// This function display values
 document.addEventListener("keydown", function(event) {    
       // Check if the key pressed is a number or operator key on the number pad
       if ((event.code.startsWith("Numpad") && event.key >= 0 && event.key <= 9)
@@ -23,12 +27,6 @@ document.addEventListener("keydown", function(event) {
         display(event.key);
       }
 });
-
-function handelKeyDown(){
-
-}
-
-// This function display values
 
 function display(value) {
     document.getElementById("result").value += value;
@@ -43,3 +41,9 @@ function calculate() {
 
     document.getElementById("result").value = q;
 }
+
+document.addEventListener("keydown",function(event){
+    if ((event.code == "Enter")) {
+        calculate();
+    }
+});
