@@ -1,4 +1,4 @@
 # Calculator
-It's a simple calculator. I did this project for fun and to learn HTML, CSS, and JS.  
-If you want to know what it looks like, here is the website. Go check it out:
+I created a simple calculator as a fun project to learn HTML, CSS, and JS.
+If you'd like to see it in action, you can visit the website at:
 <a href="https://masoudnazarii.github.io/Calculator/">Link</a>
